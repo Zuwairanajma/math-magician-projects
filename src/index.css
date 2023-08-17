@@ -57,3 +57,16 @@ code {
   width: 160px;
   height: 50px;
 }
+
+.Api-quote {
+  font-size: larger;
+  color: #fff;
+  text-align: center;
+}
+
+.quote-container {
+  width: 100%;
+  height: 100px;
+  background-color: #fe9600;
+  border: solid 2px black;
+}

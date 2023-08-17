@@ -2,6 +2,7 @@ import { React, useState } from 'react';
 import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 import BoardFeature from './BoardFeature';
+import ShowNinjaQuotes from './ShowNinjaQuotes';
 
 function Interface({ showValue }) {
   return (
@@ -39,11 +40,16 @@ export default function Calculator() {
       setShowValue('0');
     }
   };
+  console.log(infoCalculate);
 
   return (
-    <div className="Outer-Container">
-      <BoardFeature onClickButton={hanndleBoardClick} />
-      <Interface showValue={showValue} />
-    </div>
+    <>
+      <ShowNinjaQuotes />
+      <div className="Outer-Container">
+        <Interface showValue={showValue} />
+        <BoardFeature onClickButton={hanndleBoardClick} />
+
+      </div>
+    </>
   );
 }
