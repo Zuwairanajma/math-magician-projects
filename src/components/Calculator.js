@@ -40,7 +40,6 @@ export default function Calculator() {
       setShowValue('0');
     }
   };
-  console.log(infoCalculate);
 
   return (
     <>
