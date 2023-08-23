@@ -28,9 +28,9 @@ code {
 
 .Outer-Container {
   border: 1px solid black;
-  width: 320px;
-  height: 300px;
-  margin: 100px 0 100px 450px;
+  width: 520px;
+  height: 350px;
+  margin: -40px 0 0 600px;
 }
 
 .Inner-Container {
@@ -38,7 +38,7 @@ code {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  height: 50px;
+  height: 65px;
   box-sizing: border-box;
   color: #fff;
   background-color: #bbb;
@@ -49,13 +49,13 @@ code {
 }
 
 .btn {
-  width: 80px;
-  height: 50px;
+  width: 130px;
+  height: 65px;
 }
 
 .zero {
-  width: 160px;
-  height: 50px;
+  width: 260px;
+  height: 65px;
 }
 
 .Api-quote {
@@ -65,8 +65,19 @@ code {
 }
 
 .quote-container {
-  width: 100%;
-  height: 100px;
+  width: 90%;
+  height: 120%;
   background-color: #fe9600;
   border: solid 2px black;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.calculator-page {
+  gap: -250px;
+}
+
+.calculate-text {
+  margin-left: 120px;
+  width: 50%;
 }
