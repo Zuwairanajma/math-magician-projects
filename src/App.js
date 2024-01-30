@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <div>
-        <nav className="nav-bar">
+        <nav className="nav-container">
           <span className="headingStyle">Math Magicians</span>
-          <ul className="nav-link">
+          <ul className="navbar">
             <NavLink to="/">Home</NavLink>
             <NavLink className="border" to="/Calculator">Calculator</NavLink>
             <NavLink to="/Quote">Quote</NavLink>
