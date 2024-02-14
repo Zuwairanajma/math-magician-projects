@@ -13,6 +13,7 @@ function isNumber(item) {
  *   next:String       the next number to be operated on with the total
  *   operation:String  +, -, etc.
  */
+
 export default function calculate(obj, buttonName) {
   if (buttonName === 'AC') {
     return {

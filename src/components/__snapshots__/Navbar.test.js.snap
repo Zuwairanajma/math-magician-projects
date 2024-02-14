@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <nav
+    class="nav-container"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <ul
+      class="navbar"
+    >
+      <li>
+        <a
+          class="nav-item"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          class="nav-item"
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+      <li>
+        <a
+          class="nav-item"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

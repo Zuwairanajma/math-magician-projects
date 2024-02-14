@@ -1,29 +1,21 @@
-import { Route, Routes, NavLink } from 'react-router-dom';
+/* eslint-disable import/no-extraneous-dependencies */
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
-import Home from './routes/Home';
-import Quote from './routes/Quote';
-import './styles/App.css';
-import './index.css';
+import Quotes from './components/Quotes';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <div>
-        <nav className="nav-container">
-          <span className="headingStyle">Math Magicians</span>
-          <ul className="navbar">
-            <NavLink to="/">Home</NavLink>
-            <NavLink className="border" to="/Calculator">Calculator</NavLink>
-            <NavLink to="/Quote">Quote</NavLink>
-          </ul>
-        </nav>
-      </div>
+    <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/Calculator" element={<Calculator />} />
-        <Route path="/Quote" element={<Quote />} />
+        <Route path="/Quotes" element={<Quotes category="knowledge" />} />
+        <Route path="/" element={<Home />} />
       </Routes>
-    </>
+    </BrowserRouter>
   );
 }
 
